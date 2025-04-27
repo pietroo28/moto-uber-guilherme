@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta do Dia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1>Meta do Dia</h1>
+        
+        <!-- Exibir a Meta do Dia -->
+        <div id="meta">
+            <p><strong>Meta do Dia:</strong> R$ <span id="metaDoDia">0.00</span></p>
+        </div>
+        
+        <div id="totalAcumulado">
+            <p><strong>Total acumulado:</strong> R$ <span id="total">0.00</span></p>
+        </div>
+
+        <div id="inputDeposit">
+            <label for="deposito">Quanto você vai depositar hoje?</label>
+            <input type="number" id="deposito" placeholder="Digite o valor">
+            <button id="metaConcluida">Meta Concluída</button>
+        </div>
+
+        <div id="chavePix" style="display:none;">
+            <p><strong>Chave Pix:</strong> 123.456.789-00</p>
+        </div>
+
+        <div id="historico">
+            <h2>Histórico de Metas</h2>
+            <ul id="historicoLista"></ul>
+        </div>
+        <button id="zerarHistorico">Zerar Histórico</button>
+
+
+        <button id="zerarTotal">Zerar Total</button>
+    </div>
+
+    <script src="js/metas.js"></script>
+</body>
+</html>
